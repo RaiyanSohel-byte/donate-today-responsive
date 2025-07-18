@@ -145,6 +145,34 @@ input::placeholder{
 .family-description{
     width:315px;
 }
+/* contribute style */
+.contribute-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:94px;
+    margin-top:130px;
+
+}
+.contribute-text{
+    width:493px;
+}
+.contribute-title{
+    font-size: 2.812rem;
+    font-weight: bold;
+}
+.contribute-sub-title,.contribute-description{
+    font-size:1.125rem;
+    font-weight: 400;
+    color:rgba(112, 112, 112, 1);
+}
+.contribute-img{
+    width:456px;
+    height:477px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* survive style */
 /* mobile style */
 @media screen and (max-width:576px) {
     .header-text{
@@ -187,6 +215,24 @@ input::placeholder{
    .plan-text{
     padding:50px;
    }
+   .contribute-container{
+    flex-direction: column;
+   }
+   .contribute-img{
+    width:100%;
+    object-fit: cover;
+   }
+   .contribute-text{
+    width:100%;
+    
+   }
+   .contribute-title,.contribute-sub-title,.contribute-description{
+    padding-left:50px;
+    padding-right:50px;
+   }
+   .contribute-btn{
+    margin:0 40px;
+   }
 }
 @media screen and (min-width:576px) and (max-width:1024px) {
 
@@ -212,4 +258,11 @@ input::placeholder{
     
     text-align: center;
 }
+   .contribute-container{
+    flex-direction: column;
+   }
+   .contribute-text{
+    width:50%;
+    padding:50px;
+   }
 }
